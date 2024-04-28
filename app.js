@@ -418,7 +418,7 @@ bot.on("message", async (ctx) => {
       const isWalletValid = validateWalletAddress(walletAddress);
 
       if (!isWalletValid) {
-        await ctx.reply("Invalid address.\n Make sure it's a TON wallet address");
+        await ctx.reply("Invalid address.\n Make sure it's a TON wallet address.");
         // Prompt user again for wallet address recursively
         await promptForWalletAddress(ctx);
       } else {
